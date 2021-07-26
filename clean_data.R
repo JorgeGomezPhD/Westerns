@@ -1,3 +1,5 @@
+# This script takes the raw data collected on the Varioskan and prepares it for analization 
+
 # import libraries to use
 library(tidyverse)
 library(readxl)
@@ -22,7 +24,6 @@ my_data2 <- my_data[-c(1: 15), ]
 
 # Add headers
 newheaders <- c(" ","A", "B", "C","D", "E", "F", "G", "I")
-#newheaders <- c(" ","A", "B", "C","D", "E", "F", "G", "I", "[unknown]")
 colnames(my_data2) <- newheaders
 
 # Remove first column
