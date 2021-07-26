@@ -1,4 +1,5 @@
-# This script will calcululate concentration for your unknown samples from bradford data collected 
+# This script will calcululate concentration for an unknown samples from bradford data collected
+# The packages required to run this are: tidyverse, readxl, filesstrings
 
 # Import file to clean up data
 source("clean_data.R")

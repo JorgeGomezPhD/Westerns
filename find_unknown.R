@@ -1,3 +1,7 @@
+# This script will determine the unknown concentration by plotting a best fit line.
+# It will also add a CSV file with the unknown concentrations and save a PDF containing the 
+# data and best fit line plotted on a graph.
+
 # import data 
 df <- read.csv(paste0(dir_name, "/", rem_ext, ".csv"), header = TRUE)
 
