@@ -8,7 +8,7 @@ library(filesstrings)
 file_name <- paste0(readline("Enter file name : "), ".xlsx") # Get file name from user
 file_loc <- paste0('data/', file_name)
 
-# Create new directory to store files in
+# Create new directory to store files in using the original file name from line 8.
 rem_ext <- unlist(strsplit(file_name, split='.', fixed=TRUE))[1]
 dir_name <- paste0('data/', rem_ext)
 dir.create(dir_name)
@@ -22,6 +22,7 @@ my_data2 <- my_data[-c(1: 15), ]
 
 # Add headers
 newheaders <- c(" ","A", "B", "C","D", "E", "F", "G", "I")
+#newheaders <- c(" ","A", "B", "C","D", "E", "F", "G", "I", "[unknown]")
 colnames(my_data2) <- newheaders
 
 # Remove first column

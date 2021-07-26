@@ -1,9 +1,11 @@
-# This script is to get the concentration for your unknown sample from bradford data
+# This script will calcululate concentration for your unknown samples from bradford data collected 
 
 # Import file to clean up data
-source("celan_data2.R")
+source("clean_data.R")
 
 # Import file to determine your unknown absorbace number
+# NOTE: your unknown sample must have 2 replicates for this to
+# You can get this data from the "my_data2" data frame from the global enrioment tab.
 source("absorbance_unknown.R")
 
 # Import file to determine unknown concentration
