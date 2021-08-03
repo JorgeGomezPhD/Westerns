@@ -57,7 +57,7 @@ num_replicates <- as.integer(
 x <- 1
 li <- c( ) # makes an empty list to store unknown concentrations
 while(x <= num_replicates){
-    sample_number = as.integer(readline("Enter sample number : "))
+    sample_number <- as.integer(readline("Enter sample number : "))
     abs_samp <- df4[sample_number]
     unknown_sample <- (abs_samp-Intercept)/slope
     print(paste0("Your unknown concentration is: ",unknown_sample, " ug/ml"))
@@ -68,7 +68,9 @@ while(x <= num_replicates){
 df5 <- read.csv(paste0(dir_name, "/", rem_ext, ".csv"))
 # remove all the rows and columns that are not being used
 df5 <- df5[-c((uknown_row_end+1):8),-c(10:42 ) ]
+# divide the unknown concentration by 1000 to convert to ug/ml
+li1000 <- (li/1000)
 # add new column to store the data
-unknown_concentration <- c(" ", " ", li)
+unknown_concentration <- c(" ", " ", li1000) 
 df5 <- cbind(df5, unknown_concentration)
 write.csv(df5, paste0(dir_name, "/", rem_ext, ".csv"))
