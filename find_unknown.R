@@ -68,7 +68,7 @@ while(x <= num_replicates){
 df5 <- read.csv(paste0(dir_name, "/", rem_ext, ".csv"))
 # remove all the rows and columns that are not being used
 df5 <- df5[-c((uknown_row_end+1):8),-c(10:42 ) ]
-# divide the unknown concentration by 1000 to convert to ug/ml
+# divide the unknown concentration by 1000 to convert to ug/ul
 li1000 <- (li/1000)
 # add new column to store the data
 unknown_concentration <- c(" ", " ", li1000) 
