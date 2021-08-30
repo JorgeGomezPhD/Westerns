@@ -12,3 +12,6 @@ source("absorbance_unknown.R")
 
 # Import file to determine unknown concentration
 source("find_unknown.R")
+
+# Import file to determine how to make master mix sample and load wells with 25 ul volume
+source("load_lane.R")

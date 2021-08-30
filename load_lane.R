@@ -6,7 +6,7 @@ test_li <- c( ) # empty list to store data in
 
 while(x <= con_samp){
   total_volume_lane <- 25 # what is the total volume per lane
-  num_lanes <- as.integer(readline("Enter sample number : "))
+  num_lanes <- as.integer(readline("Enter number of lanes being loaded : "))
     vol_master <- (total_volume_lane*num_lanes)*1.1 # volume of master sample 
     prot_lane <- as.integer(readline("Amount of protein to be loaded per lane (ug) : ")) 
     stock_conc <- as.integer(readline("stock concentration from bradford in (ug/ul): "))
