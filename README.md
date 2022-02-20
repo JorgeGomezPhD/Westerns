@@ -1,5 +1,5 @@
 # Purpose of script
-- This script takes data from Varioskan and calculates the concentration for an unknown sample.
+- This script takes data from Varioskan and and uses linear regression to calculate the concentration for an unknown sample.
 - This will also tell you how much volume to load in each well.
 
 
